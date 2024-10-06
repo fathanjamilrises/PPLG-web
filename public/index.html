@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800&display=swap" rel="stylesheet" />
+    <meta charset="UTF-8" />
+    <!-- CDN TailwindCSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Kostumisasi style di tailwindcss -->
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              Poppins: ["Poppins"],
+            },
+            colors: {
+              pplg : "#4bdad6",
+            }, 
+          },
+        },
+      };
+    </script>
+    <title>PPLG Landing Page</title>
+    <!-- link css yang lansgsung mengarahkan ke library css tailwind -->
+    <link rel="stylesheet" href="/public/css/style.css" />
+  </head>
+  <body class="bg-gray-950 font-Poppins">
+    <!-- Bagian Header tanpa menggunakan navbar hanya logo pplg -->
+      <div class="flex w-[92%] lg:justify-start lg:ml-7 md:justify-center justify-center">
+        <img class="lg:w-[60px] lg:h-[60px] md:w-[50px] md:h-[50px] w-[30px] h-[30px] mt-5" src="./image/download.png" alt="Logo" />
+      </div>
+      <!-- Bagian Hero atau menu utama -->
+      <section class="py-5">
+        <div class="container flex flex-col md:flex-row items-center justify-center mx-auto mt-[40px] md:mt-[80px] px-5 md:px-12">
+          <div class="mb-10 md:mb-0 md:w-1/2">
+            <h1 id="judul" class="text-[1.75rem] leading-tight md:text-[2rem] md:leading-tight lg:text-[2.5rem] lg:leading-tight xl:text-[3.5rem] xl:leading-tight text-white font-bold text-center md:text-left mb-5">
+              Apa Itu
+              <span class="text-[1.75rem] leading-tight md:text-[2.5rem] md:leading-tigh lg:text-[2.5rem] lg:leading-tight xl:text-[3.5rem] xl:leading-tight  text-pplg font-bold text-center md:text-left mb-5">PPLG ?</span>
+            </h1>
+            <p class="text-[0.75rem] leading-relaxed md:text-[1rem] md:leading-relaxed lg:text-[1rem] lg:leading-relaxed  xl:text-[1rem] text-center md:text-left text-white max-w-full md:max-w-md">
+              Jurusan PPLG atau Pengembangan Perangkat Lunak dan Gim adalah merupakan jurusan yang mempelajari tentang perkembangan perangkat lunak meliputi pembuatan, manajemen organisasi pengembangan perangkat lunak, pemeliharaan dan manajemen kualitas
+            </p>
+          </div>
+          <div class="w-full md:w-1/2 flex justify-center md:justify-end">
+            <img class="w-full max-w-[300px] md:max-w-none xl:max-w-[400px] mx-auto rounded-md" src="./image/hero.jpg" alt="Hero Image" />
+          </div>
+        </div>
+
+        <!-- Bagian About namun hanya menampilkan card saja yang berisi visi misi -->
+      </section>
+      <section class="w-full max-h-full mt-12 bg-gray-900 py-5 px-2">
+      <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mt-[100px] px-4 mb-[100px] group">
+
+         <div class="card bg-white/10 group-hover:blur-sm hover:!blur-none cursor-pointer p-6 md:p-7 sm:p10 rounded-md shadow-lg">
+          <h1 class="text-3xl font-bold text-center text-pplg">Visi</h1>
+          <p class="text-center text-white mt-5 mb-5">
+            Membangun siswa yang berkarakter dan cerdas serta menghasilkan sebuah generasi cerdas yang berkualitas,memilki nalar kritis dan mandiri,serta menghasilkan lulusan yang bisa bersaing di dunia kerja
+          </p>
+        </div>
+        <div class="card bg-white/10 group-hover:blur-sm hover:!blur-none cursor-pointer p-6 rounded-md shadow-lg">
+          <h1 class="text-3xl font-bold text-center text-pplg">Misi</h1>
+          <p class="text-center text-white mt-5 mb-5">
+            Mengadakan pendidikan bermutu di bidang Pengembangan Perangkat Lunak dan Gim untuk mengembangkan sumber daya manusia yang mandiri, bernalar kritis sehingga menghasilkan lulusan yang berkualitas, kompeten dan sesuai dengan kebutuhan dunia kerja.
+          </p>
+        </div>
+      </div>
+      </section>
+      <footer>
+        <div class="footer bg-slate-600 w-full  py-4 text-white text-center">
+          <h1> Copyright &copy; 2024 Fathan Jamil</h1>
+        </div>
+      </footer>
+    </body>
+</html>
