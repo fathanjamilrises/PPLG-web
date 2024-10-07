@@ -8,6 +8,8 @@
     <!-- CDN TailwindCSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CDN AnimateCss -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <!-- Kostumisasi style di tailwindcss -->
     <script>
       tailwind.config = {
@@ -29,18 +31,18 @@
   </head>
   <body class="bg-gray-950 font-Poppins">
     <!-- Bagian Header tanpa menggunakan navbar hanya logo pplg -->
-     <header>
+     <header class="animate__animated animate__fadeInDown">
       <div class="flex w-[92%] lg:justify-start lg:ml-7 md:justify-center justify-center">
         <img class="lg:w-[60px] lg:h-[60px] md:w-[50px] md:h-[50px] w-[30px] h-[30px] mt-5" src="./image/download.png" alt="Logo" />
       </div>
      </header>
       <!-- Bagian Hero atau menu utama -->
-      <section class="py-5">
+      <section class="py-5 animate__animated animate__fadeIn">
         <div class="container flex flex-col md:flex-row items-center justify-center mx-auto mt-[40px] md:mt-[80px] px-5 md:px-12">
           <div class="mb-10 md:mb-0 md:w-1/2">
             <h1 id="judul" class="text-[1.75rem] leading-tight md:text-[2rem] md:leading-tight lg:text-[2.5rem] lg:leading-tight xl:text-[3.5rem] xl:leading-tight text-white font-bold text-center md:text-left mb-5">
               Apa Itu
-              <span class="text-[1.75rem] leading-tight md:text-[2.5rem] md:leading-tigh lg:text-[2.5rem] lg:leading-tight xl:text-[3.5rem] xl:leading-tight  text-pplg font-bold text-center md:text-left mb-5">PPLG ?</span>
+              <span class="text-[1.75rem] leading-tight md:text-[2rem] md:leading-tigh lg:text-[2.5rem] lg:leading-tight xl:text-[3.5rem] xl:leading-tight  text-pplg font-bold text-center md:text-left mb-5">PPLG ?</span>
             </h1>
             <p class="text-[0.75rem] leading-relaxed md:text-[1rem] md:leading-relaxed lg:text-[1rem] lg:leading-relaxed  xl:text-[1rem] text-center md:text-left text-white max-w-full md:max-w-md">
               Jurusan PPLG atau Pengembangan Perangkat Lunak dan Gim adalah merupakan jurusan yang mempelajari tentang perkembangan perangkat lunak meliputi pembuatan, manajemen organisasi pengembangan perangkat lunak, pemeliharaan dan manajemen kualitas
@@ -56,13 +58,13 @@
       <section class="w-full max-h-full mt-12 bg-gray-900 py-5 px-2">
       <div class="container mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 mt-[100px] px-4 mb-[100px] group">
 
-         <div class="card bg-white/10 group-hover:blur-sm hover:!blur-none cursor-pointer p-6 md:p-7 sm:p10 rounded-md shadow-lg">
+         <div class="card bg-white/10 group-hover:blur-sm hover:!blur-none cursor-pointer p-6 md:p-7 sm:p10 rounded-md shadow-lg animate__animated animate__fadeInLeft">
           <h1 class="text-3xl font-bold text-center text-pplg">Visi</h1>
           <p class="text-center text-white mt-5 mb-5">
             Membangun siswa yang berkarakter dan cerdas serta menghasilkan sebuah generasi cerdas yang berkualitas,memilki nalar kritis dan mandiri,serta menghasilkan lulusan yang bisa bersaing di dunia kerja
           </p>
         </div>
-        <div class="card bg-white/10 group-hover:blur-sm hover:!blur-none cursor-pointer p-6 rounded-md shadow-lg">
+        <div class="card bg-white/10 group-hover:blur-sm hover:!blur-none cursor-pointer p-6 rounded-md shadow-lg animate__animated animate__fadeInRight">
           <h1 class="text-3xl font-bold text-center text-pplg">Misi</h1>
           <p class="text-center text-white mt-5 mb-5">
             Mengadakan pendidikan bermutu di bidang Pengembangan Perangkat Lunak dan Gim untuk mengembangkan sumber daya manusia yang mandiri, bernalar kritis sehingga menghasilkan lulusan yang berkualitas, kompeten dan sesuai dengan kebutuhan dunia kerja.
@@ -70,28 +72,31 @@
         </div>
       </div>
       <!-- Bagian Leaderboard -->
-      <h1 class="text-5xl text-center text-pplg font-extrabold mt-[200px] mb-[100px] ">Top 3 Programmer This Week</h1>
+       <div class="">
+      <h1 class="text-5xl text-center text-pplg font-extrabold mt-[200px] mb-[30px] animate__animated animate__fadeIn">Top 3 Programmer Minggu Ini</h1>
+      <p class="text-2xl text-center text-white font-light mb-[100px] animate__animated animate__fadeIn ">Ini adalah beberapa programmer terbaik minggu ini di jurusan kami</p>
      <div class=" max-w-5xl mx-auto grid sm:grid-cols-1 md:grid-cols-3 lg-grid-cols3 gap-6">
-      <div class="bg-white/20 p-8 px-5 rounded-lg">
+      <div class="bg-white/20 p-8 px-5 rounded-lg animate__animated animate__fadeIn">
         <img src="./image/profile.png" class="h-30 mx-auto mb-5">
-        <h4 class="uppercase text-xl font-bold text-white">Fathan Jamil</h4>
+        <h4 class="uppercase text-xl font-bold text-white ">Fathan Jamil</h4>
         <p class="text-white mt-2">Front End Developer</p>
       </div>
-      <div class="bg-white/20 p-8 px-5 rounded-lg">
+      <div class="bg-white/20 p-8 px-5 rounded-lg animate__animated animate__fadeIn">
         <img src="./image/profile.png" class="h-30 mx-auto mb-5">
         <h4 class="uppercase text-xl font-bold text-white">Mahesa Radithya P</h4>
         <p class="text-white mt-2">Back End Developer</p>
       </div>
-      <div class="bg-white/20 p-8 px-5 rounded-lg">
+      <div class="bg-white/20 p-8 px-5 rounded-lg animate__animated animate__fadeIn">
         <img src="./image/profile.png" class="h-30 mx-auto mb-5">
         <h4 class="uppercase text-xl font-bold text-white">Rio Iskandar</h4>
         <p class="text-white mt-2">Front End Developer</p>
       </div>
      </div>
-     
+    </div>
       </section>
       <footer>
-        <div class="footer bg-slate-600 w-full  py-4 text-white text-center">
+        <div class="footer bg-gray-900 w-full  py-5 text-white font-extralight text-center">
+          <hr class="my-5 border-gray-700">
           <h1> Copyright &copy; 2024 Fathan Jamil</h1>
         </div>
       </footer>
